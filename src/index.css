@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #F8FAFD;
+    color: #0F172A;
+  }
+}
+
+/* Calacatta Gold & Soft Silver Marble Textures */
+.marble-bg {
+  background-color: #F8FAFD;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(241, 245, 252, 0.95) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(254, 250, 240, 0.75) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(248, 250, 253, 1) 0px, transparent 70%),
+    radial-gradient(at 0% 100%, rgba(240, 245, 252, 0.85) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(254, 245, 215, 0.5) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Light Calacatta Marble: Soft Architectural Greys & Radiant Continuous Golden Veins */
+.marble-vein-overlay {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='1200' height='1200' viewBox='0 0 1200 1200' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- Path 1: Soft Translucent Mineral Grey (Left & Upper Drift) --%3E%3Cpath d='M-100,160 Q200,90 420,360 T980,380 Q1060,540 1220,640' fill='none' stroke='%2394A3B8' stroke-width='0.9' stroke-opacity='0.2' stroke-linecap='round'/%3E%3Cpath d='M420,360 Q340,540 280,720 T100,1050' fill='none' stroke='%23CBD5E1' stroke-width='0.75' stroke-opacity='0.25' stroke-linecap='round'/%3E%3Cpath d='M-80,720 Q200,560 520,760 T1120,620' fill='none' stroke='%2394A3B8' stroke-width='0.8' stroke-opacity='0.18' stroke-linecap='round'/%3E%3Cpath d='M140,-40 Q280,260 500,420' fill='none' stroke='%23E2E8F0' stroke-width='0.6' stroke-opacity='0.3' stroke-linecap='round'/%3E%3C!-- Path 2: Independent Radiant Golden Threads (100% Continuous, Solid Curves) --%3E%3Cpath d='M250,-50 Q480,220 720,390 T1050,880' fill='none' stroke='%23D4AF37' stroke-width='0.9' stroke-opacity='0.5' stroke-linecap='round'/%3E%3Cpath d='M720,390 Q820,290 980,260 T1250,290' fill='none' stroke='%23F59E0B' stroke-width='0.7' stroke-opacity='0.45' stroke-linecap='round'/%3E%3Cpath d='M50,880 Q320,700 680,920 T1180,820' fill='none' stroke='%23D4AF37' stroke-width='0.85' stroke-opacity='0.48' stroke-linecap='round'/%3E%3Cpath d='M680,920 Q760,1020 900,1150' fill='none' stroke='%23E5C07B' stroke-width='0.6' stroke-opacity='0.4' stroke-linecap='round'/%3E%3Cpath d='M850,50 Q650,220 540,500' fill='none' stroke='%23D4AF37' stroke-width='0.7' stroke-opacity='0.38' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Nero Marquina Inverted Marble Overlay: Deep Obsidian Background with 100% Continuous Solid White & Gold Veins */
+.nero-marble-overlay {
+  background-color: #070B12;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(30, 58, 138, 0.3) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(212, 175, 55, 0.15) 0%, transparent 45%),
+    url("data:image/svg+xml,%3Csvg width='1200' height='1200' viewBox='0 0 1200 1200' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- White / Light Grey Translucent Mineral Fractures (Continuous) --%3E%3Cpath d='M-100,160 Q200,90 420,360 T980,380 Q1060,540 1220,640' fill='none' stroke='%23FFFFFF' stroke-width='0.9' stroke-opacity='0.18' stroke-linecap='round'/%3E%3Cpath d='M420,360 Q340,540 280,720 T100,1050' fill='none' stroke='%23CBD5E1' stroke-width='0.75' stroke-opacity='0.16' stroke-linecap='round'/%3E%3Cpath d='M-80,720 Q200,560 520,760 T1120,620' fill='none' stroke='%23FFFFFF' stroke-width='0.8' stroke-opacity='0.15' stroke-linecap='round'/%3E%3Cpath d='M140,-40 Q280,260 500,420' fill='none' stroke='%23E2E8F0' stroke-width='0.6' stroke-opacity='0.22' stroke-linecap='round'/%3E%3C!-- Glowing Gold Veins on Dark Stone (100% Continuous, Solid Curves) --%3E%3Cpath d='M250,-50 Q480,220 720,390 T1050,880' fill='none' stroke='%23D4AF37' stroke-width='1.1' stroke-opacity='0.65' stroke-linecap='round'/%3E%3Cpath d='M720,390 Q820,290 980,260 T1250,290' fill='none' stroke='%23F59E0B' stroke-width='0.9' stroke-opacity='0.55' stroke-linecap='round'/%3E%3Cpath d='M50,880 Q320,700 680,920 T1180,820' fill='none' stroke='%23D4AF37' stroke-width='1.0' stroke-opacity='0.6' stroke-linecap='round'/%3E%3Cpath d='M680,920 Q760,1020 900,1150' fill='none' stroke='%23E5C07B' stroke-width='0.8' stroke-opacity='0.5' stroke-linecap='round'/%3E%3Cpath d='M850,50 Q650,220 540,500' fill='none' stroke='%23D4AF37' stroke-width='0.8' stroke-opacity='0.45' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ============================================================ */
+/* NATURAL MINERAL GLINT KEYFRAMES (Organic quartz/pearl luster)*/
+/* Pure continuous line illumination without cuts or neon glow  */
+/* ============================================================ */
+@keyframes naturalMineralGlint {
+  0%, 75% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.75;
+  }
+  84% {
+    opacity: 0.95;
+  }
+  89% {
+    opacity: 0.4;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Staggered across grey mineral lines and golden filaments (100% Continuous, zero dashes) */
+.vein-glint-grey-1 {
+  animation: naturalMineralGlint 30s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.vein-glint-gold-1 {
+  animation: naturalMineralGlint 34s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+  animation-delay: 8s;
+  opacity: 0;
+}
+
+.vein-glint-grey-2 {
+  animation: naturalMineralGlint 28s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+  animation-delay: 14s;
+  opacity: 0;
+}
+
+.vein-glint-gold-2 {
+  animation: naturalMineralGlint 36s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+  animation-delay: 20s;
+  opacity: 0;
+}
+
+.vein-glint-grey-3 {
+  animation: naturalMineralGlint 32s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+  animation-delay: 26s;
+  opacity: 0;
+}
+
+.vein-glint-gold-3 {
+  animation: naturalMineralGlint 38s cubic-bezier(0.35, 0, 0.25, 1) infinite;
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+/* Nero Marquina Inverted Slab (Cards on Dark Marble) */
+.nero-slab {
+  background: linear-gradient(150deg, rgba(15, 23, 42, 0.85) 0%, rgba(10, 15, 26, 0.92) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  position: relative;
+  box-shadow: 
+    0 1px 1px 0 rgba(255, 255, 255, 0.1) inset,
+    0 -1px 1px 0 rgba(212, 175, 55, 0.2) inset,
+    0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.nero-slab::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.6) 30%, rgba(253, 230, 138, 0.9) 50%, rgba(96, 165, 250, 0.5) 70%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Sculpted Marble Slab with Soft Silver & Golden Hairline Bevel */
+.marble-slab {
+  background: linear-gradient(150deg, #FFFFFF 0%, #FAFBFD 50%, #F4F7FB 100%);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  position: relative;
+  box-shadow: 
+    0 1px 1px 0 rgba(255, 255, 255, 1) inset,
+    0 -1px 1px 0 rgba(212, 175, 55, 0.12) inset,
+    0 10px 30px -10px rgba(15, 23, 42, 0.04),
+    0 2px 6px -1px rgba(15, 23, 42, 0.02);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.marble-slab::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(203, 213, 225, 0.6) 20%, rgba(212, 175, 55, 0.75) 50%, rgba(147, 197, 253, 0.5) 80%, transparent 100%);
+  pointer-events: none;
+}
+
+.marble-slab:hover {
+  transform: translateY(-4px);
+  border-color: rgba(147, 197, 253, 0.9);
+  box-shadow: 
+    0 1px 2px 0 rgba(255, 255, 255, 1) inset,
+    0 -1px 2px 0 rgba(212, 175, 55, 0.35) inset,
+    0 25px 45px -12px rgba(29, 78, 216, 0.08),
+    0 12px 20px -6px rgba(212, 175, 55, 0.06);
+}
+
+/* Monolithic Block Panel (Hero / Big Sections) */
+.marble-monolith {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  position: relative;
+  box-shadow: 
+    0 1px 2px 0 rgba(255, 255, 255, 1) inset,
+    0 20px 40px -15px rgba(15, 23, 42, 0.05),
+    0 0 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.marble-monolith::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(203, 213, 225, 0.5) 25%, rgba(212, 175, 55, 0.75) 50%, rgba(147, 197, 253, 0.5) 75%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Polished Beveled Ribbon / Badges */
+.carved-pill {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03), inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.gold-pill {
+  background: linear-gradient(180deg, #FEFCE8 0%, #FEF9C3 100%);
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  color: #78350F;
+  box-shadow: 0 1px 2px rgba(212, 175, 55, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.sapphire-pill {
+  background: linear-gradient(180deg, #EFF6FF 0%, #DBEAFE 100%);
+  border: 1px solid rgba(147, 197, 253, 0.8);
+  color: #1E40AF;
+  box-shadow: 0 1px 2px rgba(37, 99, 235, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Refined Editorial Typography for Highlights */
+.editorial-italic {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.editorial-accent {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  color: #1E293B;
+}
+
+/* Sculptural Number Watermarks with Golden Touch */
+.sculpt-number {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: rgba(212, 175, 55, 0.2);
+  user-select: none;
+}
